@@ -28,11 +28,13 @@ function seedDB() {
         }
         console.log("removed campgrounds");
         data.forEach(function(seed) {
+            //create new campgrounds
             Campground.create(seed, function(err, campground) {
                 if(err) {
                  console.log(err);
                 } else {
                     console.log("Added a campground");
+                    //create new comments
                     Comment.create(
                     {
                         text: "this place is great, but I wish there was internet",

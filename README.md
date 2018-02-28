@@ -7,4 +7,5 @@ On your computer, run mongod (mongo daemon) however you have it set up. Make sur
 Then
 
 npm install
+
 node app.js
